@@ -1,0 +1,153 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.title {
+  font-size: 3.2rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+
+.notsupported {
+  display: none;
+  text-align: center;
+}
+
+p {
+  width: 100%;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  height: 40rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3.2rem;
+}
+
+.container aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  border-right: 2px solid #586e89;
+  padding: 0 2.8rem;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  font-size: 1.6rem;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  background: #e6eaef;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #c1cbd7;
+}
+
+h2 {
+  background: white;
+  position: sticky;
+  top: 0;
+  width: 30rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2.4rem;
+  border-bottom: 2px solid #586e89;
+  margin-bottom: 0.8rem;
+}
+
+#main {
+  position: relative;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 0 0.8rem;
+}
+
+#main::-webkit-scrollbar {
+  width: 10px;
+}
+
+#main::-webkit-scrollbar-track {
+  background: #e6eaef;
+  border-radius: 10px;
+}
+
+#main::-webkit-scrollbar-thumb {
+  background: #b4c0cf;
+  border-radius: 10px;
+}
+
+h3 {
+  position: sticky;
+  bottom: 0;
+  background: #38b000;
+  color: white;
+  width: 30rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #586e89;
+  padding: 1.2rem 0.8rem;
+}
+
+.person {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  padding: 1.2rem 0.8rem;
+}
+
+.person:nth-child(odd) {
+  background: #e7ebef;
+  border-radius: 8px;
+}
+
+.person span {
+  color: #38b000;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: none;
+  }
+
+  .notsupported {
+    display: block;
+  }
+}

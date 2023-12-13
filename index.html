@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#00BC62" />
+    <title>NetWorth</title>
+    <link rel="icon" href="images/dollar-icon-fav.svg" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player
+      src="https://lottie.host/66605bfa-898f-4d4d-aab0-0f60c1574736/oZQlExt4Fn.json"
+      background="##ffffff"
+      speed="1"
+      style="width: 100px; height: 100px"
+      loop
+      autoplay
+      direction="1"
+      mode="normal"
+    ></lottie-player>
+    <h1 class="title">Net worth Playground</h1>
+    <p class="notsupported">Not supported in small screen devices</p>
+    <div class="container">
+      <aside>
+        <button class="btn" id="add-user">👤 Add User</button>
+        <button class="btn" id="double">💵 Double Money</button>
+        <button class="btn" id="show-millionaires">
+          💰 Show Only Millionaires
+        </button>
+        <button class="btn" id="sort">⬇️ Sort By Richest</button>
+        <button class="btn" id="calculate-wealth">
+          📊 Calculate Entire Wealth
+        </button>
+        <button class="btn" onClick="window.location.reload();">
+          🔄️ Restart
+        </button>
+      </aside>
+      <main id="main">
+        <h2>Person <span>Wealth</span></h2>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
