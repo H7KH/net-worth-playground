@@ -150,4 +150,12 @@ h3 {
   .notsupported {
     display: block;
   }
+
+  .lottie-animation {
+    display: none;
+  }
+
+  .title {
+    display: none;
+  }
 }
